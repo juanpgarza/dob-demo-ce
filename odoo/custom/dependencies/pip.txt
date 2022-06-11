@@ -1,0 +1,7 @@
+git+https://github.com/OCA/openupgradelib.git@master
+unicodecsv
+unidecode
+git+https://github.com/ingadhoc/pyafipws@py3k
+git+https://github.com/pysimplesoap/pysimplesoap@e1453f385cee119bf8cfb53c763ef212652359f5
+httplib2>=0.7
+M2Crypto
