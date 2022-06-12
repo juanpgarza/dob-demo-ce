@@ -1,5 +1,5 @@
 ARG ODOO_VERSION
-FROM ghcr.io/tecnativa/doodba:${ODOO_VERSION}-onbuild
+FROM ghcr.io/tecnativa/doodba@sha256:175aefa719d752eac68166202d02c075194986c06f5e98b9152934356c52b9b3
 
 USER root
 
