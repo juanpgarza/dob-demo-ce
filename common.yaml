@@ -13,7 +13,7 @@ services:
       PGDATABASE: &dbname prod
       PGUSER: &dbuser "odoo"
       PROXY_MODE: "true"
-      LIST_DB: "false"
+      LIST_DB: "true"
     tty: true
     volumes:
       - filestore:/var/lib/odoo:z
