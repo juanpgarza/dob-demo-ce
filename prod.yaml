@@ -13,6 +13,9 @@ services:
       DB_FILTER: "^prod"
       DOODBA_ENVIRONMENT: "${DOODBA_ENVIRONMENT-prod}"
       INITIAL_LANG: "en_US"
+    ports:
+      - "10069:8069"
+      - "10072:8072"
     depends_on:
       - db
     networks:
