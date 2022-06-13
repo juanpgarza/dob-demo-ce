@@ -73,6 +73,16 @@
   merges:
     - origin $ODOO_VERSION
 
+# para usar base_user_role
+./server-backend:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/OCA/server-backend.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 ./server-tools:
   defaults:
     depth: $DEPTH_DEFAULT

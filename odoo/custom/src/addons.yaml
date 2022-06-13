@@ -19,6 +19,9 @@ reporting-engine:
 sale-workflow:
   - "*"
 
+server-backend:
+  - "*"
+
 server-tools:
   - "*"
 
