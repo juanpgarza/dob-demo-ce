@@ -1,3 +1,5 @@
+# crear db en una línea (sin módulos de localizacion)
+docker-compose run --rm odoo click-odoo-initdb -n demo -m sale_management,account,crm,website,stock,purchase,project,mail,contacts,calendar,mass_editing,web_responsive --no-demo --no-cache
 
 docker-compose run --rm odoo click-odoo-initdb -n demo -m sale_management,account,crm,website,stock,purchase,project,mail,contacts,calendar,mass_editing,web_responsive
 
