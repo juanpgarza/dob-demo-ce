@@ -1,7 +1,5 @@
 # crear db en una línea (sin módulos de localizacion)
-docker-compose run --rm odoo click-odoo-initdb -n demo -m sale_management,account,crm,website,stock,purchase,project,mail,contacts,calendar,mass_editing,web_responsive --no-demo --no-cache
-
-docker-compose run --rm odoo click-odoo-initdb -n demo -m sale_management,account,crm,website,stock,purchase,project,mail,contacts,calendar,mass_editing,web_responsive
+docker-compose run --rm odoo click-odoo-initdb -n test -m sale_management,account,crm,website,stock,purchase,project,mail,contacts,calendar,mass_editing,web_responsive,web_environment_ribbon --no-demo --no-cache
 
 # loc ARG
 ,l10n_ar_bank,l10n_ar_account_withholding,l10n_ar_afipws_fe,l10n_ar_reports,account_financial_report,account_usability
@@ -19,3 +17,9 @@ el comando no admite este parámetro:
 # borrar la db
 docker-compose run --rm odoo click-odoo-dropdb demo
 docker-compose run --rm odoo click-odoo-dropdb demo-locar
+
+# en prod hacer:
+docker-compose -f prod.yaml run --rm odoo ...etc
+
+# en test hacer:
+docker-compose -f test.yaml run --rm odoo ...etc
