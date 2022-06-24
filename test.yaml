@@ -14,6 +14,9 @@ services:
       WITHOUT_DEMO: "${DOODBA_WITHOUT_DEMO-all}"
       SMTP_PORT: "1025"
       SMTP_SERVER: smtplocal
+      LIST_DB: "true"
+    ports:
+      - "10079:8069"
     restart: unless-stopped
     depends_on:
       - db
