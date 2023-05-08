@@ -165,7 +165,7 @@
   defaults:
     depth: $DEPTH_DEFAULT
   remotes:
-    origin: https://github.com/ctmil/meli_oerp.git
+    origin: https://github.com/juanpgarza/meli_oerp.git
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
